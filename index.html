@@ -20,14 +20,14 @@
       <nav class="navigation">
         <a class="logotype" href="./"> <span class="logo-span">Web</span>Studio</a>
         <ul class="navigation-list lists">
-          <li class="navigation-list-item"><a class="navigation-list-links" href=""> <span class="navigation-list-link-mark">Студия</span> </a></li>
+          <li class="navigation-list-item before-element"><a class="navigation-list-links before-element-link" href=""> <span class="navigation-list-link-mark">Студия</span> </a></li>
           <li class="navigation-list-item"><a class="navigation-list-links" href="./portfolio.html"> Портфолио </a></li>
           <li class="navigation-list-item"><a class="navigation-list-links" href=""> Контакты </a></li>
         </ul>
       </nav>
       <ul class="contacts-list lists">
         <li class="contacts-list-item"> 
-          <a>
+          <a href="" class="contacts-list-link">
             <svg class="contacts-list-svg" 
             width="16"
             height="12">
@@ -37,7 +37,7 @@
           </li>
         <li class="contacts-list-item"><a class="contacts-list-mail" href="mailto:info@devstudio.com"> info@devstudio.com </a></li>
         <li class="contacts-list-item">
-          <a href="">
+          <a href="" class="contacts-list-link">
             <svg class="contacts-list-svg"
             width="10"
             height="16">
@@ -54,18 +54,18 @@
       <section class="hero-section">
         <div class="conteiner">
         <h1 class="hero-title">Эфективные решения для вашего бизнеса</h1>
-        <button class="main-butn" type="button">Заказать услугу</button>
+        <button class="main-butn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
       <section class="about-us">
         <div class="conteiner">
-        <h2 hidden></h2>
+        <h2 is-hidden></h2>
         <ul class="about-us-ikon">
           <li class="about-us-list lists">
             <div class="about-us-ikon-div">
               <svg class="about-us-ikon-svg"
-              width="65"
+              width="70"
                 height="70">
                 <use href=./images/sprite.svg#icon-attention
                 ></use>
@@ -79,7 +79,7 @@
           <li class="about-us-list lists">
            <div class="about-us-ikon-div">
               <svg class="about-us-ikon-svg"
-              width="67"
+              width="70"
                 height="70">
                 <use href=./images/sprite.svg#icon-clock-1
                  ></use>
@@ -93,8 +93,9 @@
 
           <li class="about-us-list lists">
             <div class="about-us-ikon-div">
-              <svg class="about-us-ikon-svg" width="70"
-                height="54">
+              <svg class="about-us-ikon-svg" 
+                 width="70"
+                height="70">
                 <use href=./images/sprite.svg#icon-diagram-1  ></use>
               </svg>
             </div>
@@ -106,8 +107,9 @@
 
           <li class="about-us-list lists">
             <div class="about-us-ikon-div">
-              <svg class="about-us-ikon-svg" width="55"
-                height="61">
+              <svg class="about-us-ikon-svg" 
+                width="70"
+                height="70">
                 <use href=./images/sprite.svg#icon-astronaut-1 ></use>
               </svg>
           </div>
@@ -125,26 +127,33 @@
         <h2 class="title-what-we-do">Чем мы занимаемся</h2>
         <ul class="list-what-we-do lists">
           <li class="list-what-we-do-item">
-            <img class="what-we-do-img" src="./images/box1.jpg"
+            <div class="what-we-do-wrapper">
+              <img class="what-we-do-img" src="./images/box1.jpg"
              width="370" 
              height="294" 
-             alt="разработчик пишет сайт" />
+             alt="разработчик пишет сайт"/>
+             <p class="what-we-do-discription">Десктопные приложения</p>
+            </div>
           </li>
           <li class="list-what-we-do-item">
-            <img class="what-we-do-img"
+            <div class="what-we-do-wrapper">
+              <img class="what-we-do-img"
               src="./images/box2.jpg"
               width="370"
               height="294"
-              alt="тестировщик проверяет мобильную версию"
-            />
+              alt="тестировщик проверяет мобильную версию"/>
+              <p class="what-we-do-discription">Мобильные приложения</p>
+              </div>
           </li>
           <li class="list-what-we-do-item">
-            <img class="what-we-do-img"
+            <div class="what-we-do-wrapper">
+              <img class="what-we-do-img"
               src="./images/box3.jpg"
               width="370"
               height="294"
-              alt="заказчик проверяет цветовую гамму"
-            />
+              alt="заказчик проверяет цветовую гамму"/>
+              <p class="what-we-do-discription">Дизайнерские решения</p>
+              </div>
           </li>
         </ul>
         </div>
@@ -457,5 +466,15 @@
       </div>
       
     </footer>
+    <div class="backdrop is-hidden" data-modal> 
+      <div class="modal">
+        <button type="button" class="modal-close-btn " data-modal-close>
+          <svg width="11" height="11">
+            <use href=./images/sprite.svg#icon-Vector></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+<script src="./js/modal.js"></script>
   </body>
 </html>
