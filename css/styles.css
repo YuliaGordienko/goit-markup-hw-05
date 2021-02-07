@@ -62,9 +62,9 @@ img {
 /*=============END COMPONENTS================*/
 
 /* =========HEADER========== */
-.logotype-svg {
-  width: 145px;
-  height: 31px;
+.header {
+width: 1600px;
+border: 1px solid #ECECEC;
 }
 .logotype {
   cursor: pointer;
@@ -88,7 +88,7 @@ img {
   cursor: pointer;
 }
 .contacts-list-mail {
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--text-color);
 }
 .contacts-list-mail:focus,
@@ -190,10 +190,7 @@ img {
 .before-element {
   position: relative;
 }
-.header {
-border: 1px solid #ECECEC;
 
-}
 /* =========END HEADER========== */
 
 /*==========HERO================*/
@@ -567,7 +564,8 @@ border: 1px solid #ECECEC;
  color: var(--white-color);
 }
  .footer-contacts {
-   cursor: pointer;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ cursor: pointer;
  }
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
