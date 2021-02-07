@@ -185,16 +185,16 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .before-element {
   position: relative;
 }
-.before-element-link:hover::before,
+/*.before-element-link:hover::before,
 .before-element-link:focus::before {
   opacity: 1;
-}
+}*/
 /* =========END HEADER========== */
 
 /*==========HERO================*/
@@ -600,16 +600,16 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .before-element-portfolio {
   position: relative;
 }
-.before-element-link-portfolio:hover::before,
+/*.before-element-link-portfolio:hover::before,
 .before-element-link-portfolio:focus:before {
   opacity: 1;
-}
+}*/
 /*=============END HEADER PORTFOLIO===============*/
 
 /*=============BUTTON PORTFOLIO================*/
