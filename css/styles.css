@@ -549,12 +549,10 @@ img {
   display: flex;
   align-items: center;
 }
-.social-link-svg-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .conteiner-foot {
+  display: flex;
+  flex-direction: column;
   padding-top: 72px;
   padding-bottom: 60px;
   margin-left: 70px;
@@ -791,21 +789,28 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  animation-name: for-modal;
-  animation-duration: 2500ms;
-  animation-iteration-count: 1;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.75) translate(-50%, -50%);
 }
 .modal-close-btn {
   position: absolute;
@@ -821,20 +826,5 @@ img {
 }
 .is-hidden {
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
-}
-@keyframes for-modal {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
