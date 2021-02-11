@@ -64,7 +64,7 @@ img {
 /* =========HEADER========== */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .logotype {
   cursor: pointer;
@@ -513,14 +513,15 @@ img {
   margin-bottom: 9px;
 }
 .logotypefoot {
+  display: inline-block;
   margin-bottom: 20px;
 }
 .title-social-list-footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 1, 143;
-  color: #ffffff;
+  letter-spacing: 1.143;
+  color: var(--white-color);
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -536,43 +537,27 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer .conteiner {
   display: flex;
+  align-items: baseline;
 }
 
 .social-list-footer {
   display: flex;
-  align-items: center;
-}
-.social-list-item-footer {
-  display: flex;
-  align-items: center;
-}
-
-.conteiner-foot {
-  display: flex;
-  flex-direction: column;
-  padding-top: 72px;
-  padding-bottom: 60px;
-  margin-left: 70px;
 }
 .conteiner-footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-right: 70px;
 }
-.footer-contacts-list {
-  display: flex;
-  flex-direction: column;
-}
+
 .social-list-item-footer:not(:last-child) {
   margin-right: 10px;
 }
 .social-list-link-footer {
-  display: flex;
-  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts:hover,
