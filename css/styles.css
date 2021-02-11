@@ -504,6 +504,8 @@ img {
 .footer {
   background-color: var(--background-color-grey);
   color: rgba(255, 255, 255, 0.6);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-span-foot {
   color: var(--white-color);
@@ -519,7 +521,6 @@ img {
 .title-social-list-footer {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 1.143;
   color: var(--white-color);
   margin-bottom: 20px;
@@ -536,10 +537,6 @@ img {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-}
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer .conteiner {
